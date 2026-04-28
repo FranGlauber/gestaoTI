@@ -1,0 +1,66 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CORPO */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTAINER */
+.form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+}
+
+/* TÍTULO */
+.form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* GRUPO */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* LABEL */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* INPUT */
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* BOTÃO */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #3498db;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* HOVER */
+button:hover {
+    background: #2980b9;
+}

@@ -1,0 +1,17 @@
+from flask import Flask, render_template, request
+app = Flask(__name__)
+
+@app.route('/index')
+def home():
+    return render_template('index.html')
+
+@app.route('/usuarios')
+def usuarios():
+    return render_template('usuarios.html')
+
+@app.route('/produtos')
+def produtos():
+    return render_template('produtos.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
