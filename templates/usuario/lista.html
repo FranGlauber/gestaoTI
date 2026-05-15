@@ -12,21 +12,32 @@
         <table>
             <thead>
                 <tr>
-                    <th>ID</th>
+                    <th>ID.</th>
+                    <th>Nome</th>
                     <th>Email</th>
-                    <th>Senha</th>
+                    <th>Telefone</th>
                 </tr>
             </thead>
             <tbody>
-                {% for user in users %}
+                {% for user in usuarios %}
                 <tr>
                     <td>{{ user.id }}</td>
+                    <td>{{ user.nome }}</td>
                     <td>{{ user.email }}</td>
-                    <td>{{ user.password }}</td>
+                    <td>{{ user.telefone }}</td>
+                    <td>
+                        <a href="{{url_for('editar', id=user.id)}}">Editar</a>
+                    </td>
+                    <td>
+                    <a href="/usuario/deletar/{{ user.id }}">Deletar</a>
+                    </td>
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
+        <br>
+                <a href="/index">Voltar para o menu</a>
     </div>
+
 </body>
 </html>
